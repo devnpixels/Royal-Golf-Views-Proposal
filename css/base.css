@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: 'Poppins';
+  font-family: 'Alegreya Sans SC', sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --theme : #3f4448;
+}
+
+body {
+  background: whitesmoke;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 10px;
+  background: lightgray;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--theme);
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
