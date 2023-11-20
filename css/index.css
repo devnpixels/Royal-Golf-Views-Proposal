@@ -36,6 +36,11 @@ strong {
   min-height: 40vh;
 }
 
+.imgBox a{
+  display: flex;
+  align-items: center;
+}
+
 .contentBox section {
   display: flex;
   flex-direction: column;
