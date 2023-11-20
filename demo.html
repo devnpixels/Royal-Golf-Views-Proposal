@@ -268,38 +268,125 @@
     <footer>
       <header>
         <img src="images/facebook-pic.png" alt="">
-        <!-- <h4>ARE YOU INTERESTED?</h4>
-        <strong>IT'S TIME TO DISCOVER</strong> -->
+        <section class="mid">
+          <article>
+            <h3>Apartments</h3>
+            <small class="text">Royal Golf Views has apartments and penthouses for sale and rent in Ghana.</small>
+            <div>
+              <a>
+                <span>ADDRESS</span>
+                <small class="text">34-35 John Owusu Addo Close, Ridge, Kumasi, Ghana</small>
+              </a>
+              <a>
+                <span>PHONE</span>
+                <small class="text">+233 (0)544 339 762</small>
+              </a>
+              <a>
+                <span>E-MAIL</span>
+                <small class="text">sales@royalgolfviews.online</small>
+              </a>
+            </div>
+          </article>
+          <article>
+            <h3>Apartments</h3>
+            <small>Royal Golf Views has apartments and penthouses for sale and rent in Ghana.</small>
+            <a>
+              <span>ADDRESS</span>
+              <small>34-35 John Owusu Addo Close, Ridge, Kumasi, Ghana</small>
+            </a>
+            <a>
+              <span>PHONE</span>
+              <small>+233 (0)544 339 762</small>
+            </a>
+            <a>
+              <span>E-MAIL</span>
+              <small>sales@royalgolfviews.online</small>
+            </a>
+          </article>
+          <article>
+            <h3>Apartments</h3>
+            <small>Royal Golf Views has apartments and penthouses for sale and rent in Ghana.</small>
+            <a>
+              <span>ADDRESS</span>
+              <small>34-35 John Owusu Addo Close, Ridge, Kumasi, Ghana</small>
+            </a>
+            <a>
+              <span>PHONE</span>
+              <small>+233 (0)544 339 762</small>
+            </a>
+            <a>
+              <span>E-MAIL</span>
+              <small>sales@royalgolfviews.online</small>
+            </a>
+          </article>
+        </section>
         <h4>ROYAL GOLF VIEWS</h4>
       </header>
     </footer>
 
     <style>
-      footer{
+      footer {
         background: var(--theme);
         width: 90%;
         padding: 5vh 5%;
       }
-      footer header{
+
+      footer header {
         display: flex;
         flex-direction: column;
         gap: 1rem;
         align-items: center;
       }
-      footer header img{
+
+      footer header img {
         width: 100px;
       }
 
-      footer header h4{
+      footer header h4 {
         color: white;
-        font-size:2.5rem;
+        font-size: 2.5rem;
         font-weight: 400;
         letter-spacing: 1px;
       }
-      footer header strong{
+
+      footer header strong {
         color: wheat;
         font-size: 1.5rem;
         font-weight: 400;
+      }
+
+      footer .mid {
+        border: 1px solid red;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      footer .mid article {
+        display: flex;
+        gap: 0.2rem;
+        flex-direction: column;
+      }
+      footer .mid article div{
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+      }
+
+      footer .mid article a {
+        display: flex;
+        flex-direction: column;
+      }
+
+      footer .mid article h3{
+        color: wheat;
+      }
+      footer .mid article span{
+        color: darkgray;
+      }
+      footer .mid article small,
+      footer .mid article a small {
+        color: white;
       }
     </style>
 
