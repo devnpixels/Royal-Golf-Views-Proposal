@@ -207,7 +207,8 @@ h3 sub {
 .facilityBox {
   width: 90%;
   padding: 3vh 5%;
-  background: burlywood;
+  /* background: burlywood; */
+  background: ghostwhite;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -243,6 +244,7 @@ h3 sub {
 
 .facilityBox section div legend {
   border: 1px solid white;
+  border: 1px solid wheat;
   width: 20px;
   height: 20px;
   display: flex;
@@ -285,6 +287,52 @@ h3 sub {
   border-radius: 20px;
 }
 
+.introBox {
+  align-items: center;
+}
+
+.introBox .right {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+}
+
+.bubbleBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  z-index: 2000;
+}
+
+.bubbleBox div {
+  width: 190px;
+  height: 160px;
+  background: salmon;
+  border-radius: 30px;
+  background-image: url(../images/land.webp);
+  background-position: center;
+  background-size: cover;
+  transition: 0.4s ease;
+}
+
+.bubbleBox div:hover {
+  z-index: 100;
+  scale: 2;
+}
+
+.bubbleBox div:nth-child(2) {
+  position: relative;
+  /* left: 100px; */
+}
+
+.bubbleBox div:nth-child(1),
+.bubbleBox div:nth-child(4) {
+  position: relative;
+  background-image: url(../images/SF5D0189-scaled.jpg);
+  /* top: -20px; */
+}
+
+
 @media all and (max-width:1000px) {
   .showBox {
     width: 90%;
@@ -311,11 +359,22 @@ h3 sub {
 @media all and (max-width:850px) {
   .introBox {
     display: flex;
+    /* border: 2px solid red; */
     flex-direction: column;
   }
 
-  .introBox img {
-    width: 50%;
+  .introBox .right{
+    width: 100%;
+  }
+  .bubbleBox{
+    width: 100%;
+  }
+  .bubbleBox div{
+    height: 230px;
+    width: 100%;
+  }
+  .bubbleBox div:hover{
+    scale: 1;
   }
 
   .facilityBox section {
@@ -398,6 +457,11 @@ h3 sub {
   .facilityBox section {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .bubbleBox div{
+    height: 150px;
+    width: 100%;
+  }
 }
 
 @media all and (max-width:500px) {
@@ -431,9 +495,9 @@ h3 sub {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .facilityBox section div {
+  /* .facilityBox section div {
     min-width: 200px;
-  }
+  } */
 
   .facilityBox section div strong {
     width: max-content;
